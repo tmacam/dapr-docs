@@ -34,7 +34,7 @@ The following example demonstrates an `orders` topic message sent by Dapr that i
     "traceid": "00-113ad9c4e42b27583ae98ba698d54255-e3743e35ff56f219-01",
     "tracestate": "",
     "data": {
-    "orderId": 1
+        "orderId": 1
     },
     "id": "5929aaac-a5e2-4ca1-859c-edfe73f11565",
     "specversion": "1.0",

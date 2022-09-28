@@ -35,7 +35,7 @@ spec:
   - name: redisHost
     value: localhost:6379
   - name: redisPassword
-    value: <PASSWORD>
+    value: ""
 ```
 
 ### Acquire lock
@@ -45,8 +45,8 @@ spec:
 {{% codetab %}}
 
 ```bash
-curl -X POST http://localhost:3500/v1.0-alpha1/lock/lockstore
-   -H 'Content-Type: application/json'
+curl -X POST http://localhost:3500/v1.0-alpha1/lock/lockstore \
+   -H 'Content-Type: application/json' \
    -d '{"resourceId":"my_file_name", "lockOwner":"random_id_abc123", "expiryInSeconds": 60}'
 ```
 
@@ -124,8 +124,8 @@ func main() {
 {{% codetab %}}
 
 ```bash
-curl -X POST http://localhost:3500/v1.0-alpha1/unlock/lockstore
-   -H 'Content-Type: application/json'
+curl -X POST http://localhost:3500/v1.0-alpha1/unlock/lockstore \
+   -H 'Content-Type: application/json' \
    -d '{"resourceId":"my_file_name", "lockOwner":"random_id_abc123"}'
 ```
 

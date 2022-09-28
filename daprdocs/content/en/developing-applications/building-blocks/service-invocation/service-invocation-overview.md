@@ -12,7 +12,7 @@ Using service invocation, your application can reliably and securely communicate
 
 In many microservice-based applications multiple services need the ability to communicate with one another. This inter-service communication requires that application developers handle problems like:
 
-- **Service discovery.** How do I discover my different services?
+- **Service discovery.** How do I discover my different services and their endpoints?
 - **Standardizing API calls between services.** How do I invoke methods between services?
 - **Secure inter-service communication.** How do I call other services securely with encryption and apply access control on the methods?
 - **Mitigating request timeouts or failures.** How do I handle retries and transient errors?

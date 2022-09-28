@@ -78,15 +78,19 @@ Notice, as specified in the code above, the code saves application state in the 
 
 Order-processor output:
 ```
+== APP == INFO:root:➡️ Starting a new cycle for order with orderId 1
 == APP == INFO:root:Saving Order: {'orderId': '1'}
 == APP == INFO:root:Result after get: b"{'orderId': '1'}"
 == APP == INFO:root:Deleting Order: {'orderId': '1'}
+== APP == INFO:root:➡️ Starting a new cycle for order with orderId 2
 == APP == INFO:root:Saving Order: {'orderId': '2'}
 == APP == INFO:root:Result after get: b"{'orderId': '2'}"
 == APP == INFO:root:Deleting Order: {'orderId': '2'}
+== APP == INFO:root:➡️ Starting a new cycle for order with orderId 3
 == APP == INFO:root:Saving Order: {'orderId': '3'}
 == APP == INFO:root:Result after get: b"{'orderId': '3'}"
 == APP == INFO:root:Deleting Order: {'orderId': '3'}
+== APP == INFO:root:➡️ Starting a new cycle for order with orderId 4
 == APP == INFO:root:Saving Order: {'orderId': '4'}
 == APP == INFO:root:Result after get: b"{'orderId': '4'}"
 == APP == INFO:root:Deleting Order: {'orderId': '4'}
