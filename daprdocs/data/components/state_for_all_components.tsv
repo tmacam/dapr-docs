@@ -1,0 +1,97 @@
+building_block	provider	component	state	version
+name_resolution	generic	HashiCorp Consul	Alpha	v1
+name_resolution	selfhosted	mDNS	Stable	v1
+name_resolution	kubernetes	Kubernetes	Stable	v1
+configuration_stores	generic	Redis	Alpha	v1
+pubsub	aws	AWS SNS/SQS	Beta	v1
+pubsub	generic	Hazelcast	Alpha	v1
+pubsub	generic	In Memory	Alpha	v1
+pubsub	generic	Apache Kafka	Stable	v1
+pubsub	generic	Redis Streams	Stable	v1
+pubsub	generic	JetStream	Alpha	v1
+pubsub	generic	Pulsar	Alpha	v1
+pubsub	generic	MQTT	Beta	v1
+pubsub	generic	NATS Streaming	Beta	v1
+pubsub	generic	RabbitMQ	Beta	v1
+pubsub	azure	Azure Event Hubs	Beta	v1
+pubsub	azure	Azure Service Bus	Stable	v1
+pubsub	gcp	GCP Pub/Sub	Alpha	v1
+state_stores	oracle	Autonomous Database (ATP and ADW)	Alpha	v1
+state_stores	oracle	Object Storage	Alpha	v1
+state_stores	aws	AWS DynamoDB	Alpha	v1
+state_stores	generic	Aerospike	Alpha	v1
+state_stores	generic	Apache Cassandra	Alpha	v1
+state_stores	generic	CockroachDB	Alpha	v1
+state_stores	generic	Couchbase	Alpha	v1
+state_stores	generic	Hashicorp Consul	Alpha	v1
+state_stores	generic	Hazelcast	Alpha	v1
+state_stores	generic	In Memory	Developer-only	v1
+state_stores	generic	JetStream KV	Alpha	v1
+state_stores	generic	Memcached	Alpha	v1
+state_stores	generic	MongoDB	Stable	v1
+state_stores	generic	MySQL	Alpha	v1
+state_stores	generic	Oracle Database	Alpha	v1
+state_stores	generic	PostgreSQL	Stable	v1
+state_stores	generic	Redis	Stable	v1
+state_stores	generic	RethinkDB	Alpha	v1
+state_stores	generic	Zookeeper	Alpha	v1
+state_stores	azure	Azure Blob Storage	Stable	v1
+state_stores	azure	Azure CosmosDB	Stable	v1
+state_stores	azure	Azure SQL Server	Stable	v1
+state_stores	azure	Azure Table Storage	Alpha	v1
+state_stores	gcp	GCP Firestore	Alpha	v1
+secret_stores	aws	AWS Secrets Manager	Alpha	v1
+secret_stores	aws	AWS SSM Parameter Store	Alpha	v1
+secret_stores	alibaba	AlibabaCloud OOS Parameter Store	Alpha	v1
+secret_stores	generic	HashiCorp Vault	Alpha	v1
+secret_stores	generic	Local environment variables	Beta	v1
+secret_stores	generic	Local file	Beta	v1
+secret_stores	generic	Kubernetes secrets	Stable	v1
+secret_stores	azure	Azure Key Vault	Stable	v1
+secret_stores	gcp	GCP Secret Manager	Alpha	v1
+bindings	aws	AWS DynamoDB	Alpha	v1
+bindings	aws	AWS S3	Alpha	v1
+bindings	aws	AWS SES	Alpha	v1
+bindings	aws	AWS SNS	Alpha	v1
+bindings	aws	AWS SQS	Alpha	v1
+bindings	aws	AWS Kinesis	Alpha	v1
+bindings	alibaba	Alibaba Cloud DingTalk	Alpha	v1
+bindings	alibaba	Alibaba Cloud OSS	Alpha	v1
+bindings	alibaba	Alibaba Cloud Tablestore	Alpha	v1
+bindings	generic	Apple Push Notifications (APN)	Alpha	v1
+bindings	generic	Cron (Scheduler)	Alpha	v1
+bindings	generic	GraphQL	Alpha	v1
+bindings	generic	InfluxDB	Alpha	v1
+bindings	generic	Kafka	Alpha	v1
+bindings	generic	Kubernetes Events	Alpha	v1
+bindings	generic	Local Storage	Alpha	v1
+bindings	generic	MQTT	Alpha	v1
+bindings	generic	MySQL	Alpha	v1
+bindings	generic	PostgreSql	Alpha	v1
+bindings	generic	Postmark	Alpha	v1
+bindings	generic	RabbitMQ	Alpha	v1
+bindings	generic	Redis	Alpha	v1
+bindings	generic	SMTP	Alpha	v1
+bindings	generic	Twilio	Alpha	v1
+bindings	generic	Twitter	Alpha	v1
+bindings	generic	SendGrid	Alpha	v1
+bindings	generic	HTTP	Stable	v1
+bindings	azure	Azure CosmosDBGremlinAPI	Alpha	v1
+bindings	azure	Azure Event Grid	Alpha	v1
+bindings	azure	Azure SignalR	Alpha	v1
+bindings	azure	Azure Blob Storage	Beta	v1
+bindings	azure	Azure CosmosDB	Beta	v1
+bindings	azure	Azure Event Hubs	Beta	v1
+bindings	azure	Azure Service Bus Queues	Beta	v1
+bindings	azure	Azure Storage Queues	Stable	v1
+bindings	zeebe	Zeebe Command	Alpha	v1
+bindings	zeebe	Zeebe Job Worker	Alpha	v1
+bindings	gcp	GCP Cloud Pub/Sub	Alpha	v1
+bindings	gcp	GCP Storage Bucket	Alpha	v1
+middleware	http	Rate limit	Alpha	v1
+middleware	http	OAuth2 Authorization Grant flow	Alpha	v1
+middleware	http	OAuth2 Client Credentials Grant flow	Alpha	v1
+middleware	http	OpenID Connect	Alpha	v1
+middleware	http	Rego/OPA Policies	Alpha	v1
+middleware	http	Uppercase	Stable	v1
+locks	generic	Redis	Alpha	v1
