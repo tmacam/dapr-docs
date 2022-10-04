@@ -80,3 +80,17 @@ Dapr allows custom [middleware]({{<ref "middleware.md">}})  to be plugged into t
 
 - [List of supported middleware components]({{< ref supported-middleware >}})
 - [Middleware implementations](https://github.com/dapr/components-contrib/tree/master/middleware)
+
+## Extending Dapr (Pluggable Components)
+
+If the Dapr project doesn't currently provide a component you need, there's also an option to create your own custom external component (or bring your exisiting component) and still use it with Dapr. The external components do not need to be written in Go, exist outside the Dapr runtime, are still able to "plug" into Dapr and able to utilize Dapr's building blocks (similar to how typical Dapr-provided components work). 
+
+Creating your own pluggable component can be hepful for scenarios where writing a traditional Dapr component might not be feasible (i.e., unfamiliar with Go, remaining untethered to Dapr release cycle, not interested in contributing your component to dapr project etc.). For those situations creating an external pluggable component is recommended.
+
+External pluggable components:
+
+- Do not need to be written in Go
+- Do not run as part of the same executable as Dapr itself
+- Are not integrated directly with the Dapr codebase
+- Are not distributed or hosted with the rest of the Dapr codebase
+
