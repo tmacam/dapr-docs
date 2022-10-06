@@ -81,7 +81,7 @@ Dapr allows custom [middleware]({{<ref "middleware.md">}})  to be plugged into t
 - [List of supported middleware components]({{< ref supported-middleware >}})
 - [Middleware implementations](https://github.com/dapr/components-contrib/tree/master/middleware)
 
-## Extending Dapr (gRPC Pluggable Components)
+## Pluggable Components
 
 If the Dapr project doesn't currently provide a component integration you need, there's an option to create your own external gRPC-based components. The external components do not need to be written in Go, exist outside the Dapr runtime and are still able to "plug" into Dapr to utilize existing building block APIs (similar to how traditional embedded Dapr-provided components work). 
 
