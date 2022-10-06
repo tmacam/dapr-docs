@@ -1,6 +1,6 @@
 ---
 type: docs
-title: "Developing external gRPC Pluggable components"
+title: "Developing pluggable components (.NET)"
 linkTitle: "How-to: Develop external pluggable components"
 weight: 4500
 description: "Process for developing external gRPC components"
