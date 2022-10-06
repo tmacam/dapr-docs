@@ -13,7 +13,7 @@ If you haven't already, make sure to read through the tutorial for gRPC pluggabl
 
 ## Download, build and run an external gRPC Component 
 
-#### Prequisites
+### Prerequisites
 - [Familiarity with gRPC and protocol buffers][grpc]. 
 - [A gRPC-supported programming language](https://grpc.io/docs/languages/).
 - Operating system that supports Unix Domain Sockets.
@@ -21,7 +21,7 @@ If you haven't already, make sure to read through the tutorial for gRPC pluggabl
 - [.NET Core 6+](https://dotnet.microsoft.com/download)
 - [grpc_cli tool](https://github.com/grpc/grpc/blob/master/doc/command_line_tool.md) for making gRPC calls
 
-#### Download, Build and Run Template files
+### Download, Build and Run Template files
 To get started, download the zip files for the template component, [DaprMemStoreComponent](link). The template The files provided are written for a in-memory state-store component but can be used for other component-types like pubsub components or binding components. 
 
 Open the `MemStoreService.cs` file.
@@ -58,16 +58,17 @@ public class PubsubService : Pubsub.pubsubBase
 }
 
 ```
-#### Build and run comonent service
+### Build and run component service
 
-Build the external gRPC component component. 
+Build the external gRPC component. 
 ```shell
 `dotnet build`
 ```
 
 
 Now you should be able to implement any methods you would like to define for your external gRPC component service. 
-Below is a code sample that shows how to implement methods. The sample is the same state store tempate from above (`MemStoreService.cs`) but with added methods for Features, Get, Set and BulkSet. All methods have been overridden in the code sample.
+
+Below is a code sample that shows how to implement methods. The sample is the same state store template from above (`MemStoreService.cs`) but with added methods for Features, Get, Set and BulkSet. All methods have been overridden in the code sample.
 
 ```csharp
 Now implement the external gRPC component
@@ -137,7 +138,7 @@ Try invoking a method from your externbal gRPC component. You should get an `OK`
 `grpc_cli call unix:///tmp/Dapr-components-sockets/memstore.sock Features ''`
 ```
 
-#### Reccomended methods to implement: Init and Ping
+### Recommended methods to implement: Init and Ping
 
 The Dapr runtime uses the ping method as a liveness probe, so it's up to you to decide what is `liveness` from your component point of view. As a simple implementation, `Ping` can just respond back without any deep check, but implementing it is a requirement to work with Daprd. 
 
@@ -150,7 +151,7 @@ Add the ping method to your `MemStoreService.cs` file.
     }
 ```
 
-#### Validation step
+### Validation step
 
 To validate that your external gRPC component is workking as expected, you can try a simple `Set` call
 
