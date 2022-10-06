@@ -26,7 +26,7 @@ To get started, download the zip files for the template component, [DaprMemStore
 
 Open the `MemStoreService.cs` file.
 
-```
+```csharp
 using Dapr.Proto.Components.V1;
 
 namespace DaprMemStoreComponent.Services;
@@ -43,7 +43,7 @@ public class MemStoreService : StateStore.StateStoreBase
 ```
 This file contains the basic template for creating a gRPC pluggable component. You can change the component type in your file to match your preference. For example, here's the same file but adjusted for a pubsub component. 
 
-```
+```csharp
 using Dapr.Proto.Components.V1;
 
 namespace DaprPubsubComponent.Services;
