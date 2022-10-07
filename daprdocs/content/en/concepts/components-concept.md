@@ -6,7 +6,10 @@ weight: 300
 description: "Modular functionality used by building blocks and applications"
 ---
 
-Dapr uses a modular design where functionality is delivered as a component. Each component has an interface definition.  All of the components are pluggable so that you can swap out one component with the same interface for another. The [components contrib repository](https://github.com/dapr/components-contrib) is where you can contribute implementations for the component interfaces and extend Dapr's capabilities.
+Dapr uses a modular design where functionality is delivered as a component. Each component has an interface definition. All of the components are interchangable so that you can swap out one component with the same interface for another.
+ 
+
+The [components contrib repository](https://github.com/dapr/components-contrib) is where you can contribute implementations for the component interfaces and extend Dapr's capabilities. Alternatively, Dapr component interfaces can also be extended with [pluggable components](https://docs.dapr.io/concepts/components-concept/#pluggable-components).
 
  A building block can use any combination of components. For example the [actors]({{<ref "actors-overview.md">}}) building block and the [state management]({{<ref "state-management-overview.md">}}) building block both use [state components](https://github.com/dapr/components-contrib/tree/master/state).  As another example, the [pub/sub]({{<ref "pubsub-overview.md">}}) building block uses [pub/sub components](https://github.com/dapr/components-contrib/tree/master/pubsub).
 
@@ -83,8 +86,13 @@ Dapr allows custom [middleware]({{<ref "middleware.md">}})  to be plugged into t
 
 ## Pluggable Components
 
-If the Dapr project doesn't currently provide a component integration you need, there's an option to create your own external gRPC-based components. The external components do not need to be written in Go, exist outside the Dapr runtime and are still able to "plug" into Dapr to utilize existing building block APIs (similar to how traditional embedded Dapr-provided components work). 
+Dapr allows for users to create their own self-hosted components, they are called pluggable components. These components are just ordinary components that do not need to be written in Go, exist outside the Dapr runtime and are still able to "plug" into Dapr to utilize existing building block APIs. 
 
-Creating your own external pluggable component can be hepful for scenarios where writing a traditional Dapr component might not be feasible (e.g., unfamiliar with Go, remaining untethered to Dapr release cycle, not interested in contributing custom component to dapr project etc.). For those situations creating an external pluggable component could be a better option.
+Creating your own pluggable component can be helpful for scenarios where the Dapr project doesn't provide a component integration you need. Pluggable components are also useful for scenarios where  writing a traditional Dapr component might not be feasible (e.g., unfamiliar with Go, remaining untethered to Dapr release cycle, not interested in contributing custom component to Dapr project etc.). For these situations creating a pluggable component could be a better option.
 
-**Note:** This method for creating custom external gRPC pluggable components does not require that components be written in Go and does not adhere to the same implemntation process used for developing traditional Dapr (Go-based) components. For more information on that process read the documentation for [Developing new components](https://github.com/dapr/components-contrib/blob/master/docs/developing-component.md)
+The following pages provide more context on this subject:
+* [Pluggable components overview](({{< ref extending-dapr/overview >}}))
+* [Writing a pluggable component](({{< ref developing-pluggable-components >}}))
+
+
+**Note:** Since pluggable components are not required to be written in Go, they follow a different implementation process than built-in Dapr components. For more information on that process read the documentation for [Developing new components](https://github.com/dapr/components-contrib/blob/master/docs/developing-component.md)
